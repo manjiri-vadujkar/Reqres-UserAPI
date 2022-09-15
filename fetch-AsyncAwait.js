@@ -64,7 +64,12 @@ function postUserDetails() {
       //console.log(res);
       return res.json();
     })
-    .then((data) => alert(`User created with ID = ${data.id}`));
+    .then((data) => {
+      alert(`User created with ID = ${data.id}`);
+      fname.value = "";
+      lname.value = "";
+      email.value = "";
+    });
 }
 
 function createHTMLTable(userData) {
