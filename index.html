@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fetch API</title>
+  </head>
+  <body>
+    <div>
+      <h1>Enter a User ID below to retrieve user details</h1>
+      <input
+        type="text"
+        id="getUserID"
+        placeholder="User ID"
+        required="required"
+      />
+      <input
+        type="button"
+        class="btn"
+        id="retrieveBtn"
+        value="Get User Details"
+        onclick="getUserDetails()"
+      />
+
+      <div>
+        <input
+          type="button"
+          id="allUsersBtn"
+          class="btn"
+          value="Get All Users"
+          onclick="getAllUsers()"
+        />
+
+        <input
+          type="button"
+          id="allUsersBtn"
+          class="btn"
+          value="Clear Details"
+          onclick="clearTable()"
+        />
+      </div>
+    </div>
+
+    <div class="userDetails"></div>
+
+    <div>
+      <h1>Adding new User</h1>
+      <form>
+        <div class="flex form-group">
+          <label for="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+        </div>
+
+        <div class="flex form-group">
+          <label for="lname">Last name:</label><br />
+          <input type="text" id="lname" name="lname" />
+        </div>
+
+        <div class="flex form-group">
+          <label for="email">User mail:</label><br />
+          <input type="email" id="email" name="email" /><br />
+        </div>
+
+        <input
+          type="button"
+          class="btn"
+          id="postBtn"
+          value="Post User Details"
+          onclick="postUserDetails()"
+        />
+      </form>
+    </div>
+
+    <!-- Basics of Fetch API using Promise -->
+    <!-- <script src="script.js"></script> -->
+
+    <!-- Fetch API with Async/Await -->
+    <script src="fetch-AsyncAwait.js"></script>
+  </body>
+</html>

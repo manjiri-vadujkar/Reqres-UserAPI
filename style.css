@@ -1,0 +1,36 @@
+body {
+  margin: 1rem;
+}
+
+input,
+label {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.btn {
+  border-radius: 1rem;
+  background-color: #9ee3f7;
+  cursor: pointer;
+}
+
+.block {
+  display: block;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+table th {
+  background-color: #da63b5;
+}
+
+.flex {
+  display: flex;
+}
